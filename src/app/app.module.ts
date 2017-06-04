@@ -4,7 +4,10 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { MapPage } from '../pages/map/map';
+
 import { TabsPage } from '../pages/tabs/tabs';
+
+import { DetailJapanKinkakujiPage } from '../pages/detail-japan-kinkakuji/detail-japan-kinkakuji'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     MapPage,
-    TabsPage
+    TabsPage,
+    DetailJapanKinkakujiPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     MapPage,
-    TabsPage
+    TabsPage,
+    DetailJapanKinkakujiPage
   ],
   providers: [
     StatusBar,
