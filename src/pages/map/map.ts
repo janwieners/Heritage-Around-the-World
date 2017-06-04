@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
+import {DetailJapanKinkakujiPage} from '../detail-japan-kinkakuji/detail-japan-kinkakuji';
+
 import 'leaflet';
 
 @IonicPage()
@@ -52,7 +54,7 @@ export class MapPage {
     latitude: '135.72845',
     longitude: '35.039512',
     department: 'japanologie',
-    detail: 'detail-japan-kinkakuji'
+    detail: DetailJapanKinkakujiPage
   }];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -72,6 +74,10 @@ export class MapPage {
     return map;
   }
 
+  private onMarkerClicked(destination) {
+    this.navCtrl.push(destination);
+  }
+
   private addMarkers(map) {
 
     let marker, bounds = new L.LatLngBounds(L.latLng(0, 0), L.latLng(0, 0));
@@ -80,6 +86,11 @@ export class MapPage {
 
       bounds.extend(new L.LatLng(cur.longitude, cur.latitude));
       marker = L.marker([cur.longitude, cur.latitude], {icon: L.icon(this.icons[cur.department])});
+
+      marker.on('click', () => {
+        this.onMarkerClicked(cur.detail);
+      });
+
       map.addLayer(marker);
     }
 
