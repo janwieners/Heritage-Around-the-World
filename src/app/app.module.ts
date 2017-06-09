@@ -4,6 +4,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { MapPage } from '../pages/map/map';
+import { InfoPage } from '../pages/info/info';
+import { OverviewPage } from '../pages/overview/overview';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -17,6 +19,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     MapPage,
     TabsPage,
+    InfoPage,
+    OverviewPage,
     DetailJapanKinkakujiPage
   ],
   imports: [
@@ -28,6 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     MapPage,
     TabsPage,
+    InfoPage,
+    OverviewPage,
     DetailJapanKinkakujiPage
   ],
   providers: [
