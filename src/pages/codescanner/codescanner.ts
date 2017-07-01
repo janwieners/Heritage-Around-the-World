@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
-import { AlertController } from 'ionic-angular';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import {AlertController} from 'ionic-angular';
+import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 
 @IonicPage()
 @Component({
@@ -16,16 +16,25 @@ export class CodescannerPage {
   }
 
   ionViewDidLoad() {
+  }
+
+  private codeFormat: string = '';
+  private codeContent: string = '';
+
+  private startScanner(): void {
 
     this.barcodeScanner.scan().then((barcodeData) => {
 
+      this.codeContent = barcodeData.text;
+      this.codeFormat = barcodeData.format;
+    }, (err) => {
+
       let alert = this.alertCtrl.create({
-        title: barcodeData.text,
-        subTitle: barcodeData.format,
+        title: 'Fehler',
+        subTitle: 'Kein Kamerazugriff möglich.',
         buttons: ['Dismiss']
       });
       alert.present();
-    }, (err) => {
     });
   }
 
