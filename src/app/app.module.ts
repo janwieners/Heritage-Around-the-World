@@ -4,7 +4,6 @@ import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 
-import {MapPage} from '../pages/map/map';
 import {InfoPage} from '../pages/info/info';
 import {OverviewPage} from '../pages/overview/overview';
 
@@ -19,7 +18,6 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
 @NgModule({
   declarations: [
     MyApp,
-    MapPage,
     TabsPage,
     InfoPage,
     OverviewPage,
@@ -33,7 +31,6 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MapPage,
     TabsPage,
     InfoPage,
     OverviewPage,
