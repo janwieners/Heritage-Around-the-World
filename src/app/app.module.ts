@@ -5,6 +5,7 @@ import {MyApp} from './app.component';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 
 import {InfoPage} from '../pages/info/info';
+import {HelpPage} from "../pages/help/help";
 import {OverviewPage} from '../pages/overview/overview';
 
 import {TabsPage} from '../pages/tabs/tabs';
@@ -20,6 +21,7 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
     MyApp,
     TabsPage,
     InfoPage,
+    HelpPage,
     OverviewPage,
     CodescannerPage,
     DetailJapanKinkakujiPage
@@ -33,6 +35,7 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
     MyApp,
     TabsPage,
     InfoPage,
+    HelpPage,
     OverviewPage,
     CodescannerPage,
     DetailJapanKinkakujiPage
