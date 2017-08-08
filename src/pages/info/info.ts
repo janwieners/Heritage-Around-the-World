@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 
 @IonicPage()
 @Component({
@@ -8,11 +9,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InfoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  videoUrl: SafeResourceUrl;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InfoPage');
+  constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
+    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/WPPJ7eRngGk')
   }
 
 }
