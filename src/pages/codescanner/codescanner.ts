@@ -4,6 +4,9 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AlertController} from 'ionic-angular';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner';
 
+// Content
+import {AustralianConvictSitesPage} from "../australian-convict-sites/australian-convict-sites";
+
 @IonicPage()
 @Component({
   selector: 'page-codescanner',
@@ -15,8 +18,9 @@ export class CodescannerPage {
               public barcodeScanner: BarcodeScanner, private alertCtrl: AlertController) {
   }
 
-  ionViewDidLoad() {
-  }
+  private pages = {
+    '1australia': AustralianConvictSitesPage
+  };
 
   private debug: boolean = true;
 
@@ -29,12 +33,27 @@ export class CodescannerPage {
 
       this.codeContent = barcodeData.text;
       this.codeFormat = barcodeData.format;
+
+      let destination = this.pages[barcodeData.text];
+
+      if (destination) {
+        this.navCtrl.push(destination);
+      } else {
+
+        let alert = this.alertCtrl.create({
+          title: 'Fehler',
+          subTitle: 'Unbekannter QR-Code.',
+          buttons: ['Schließen']
+        });
+        alert.present();
+      }
+
     }, (err) => {
 
       let alert = this.alertCtrl.create({
         title: 'Fehler',
         subTitle: 'Kein Kamerazugriff möglich.',
-        buttons: ['Dismiss']
+        buttons: ['Schließen']
       });
       alert.present();
     });
