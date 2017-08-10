@@ -14,12 +14,15 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {CodescannerPage} from "../pages/codescanner/codescanner";
 
+import {TourPage} from "../pages/tour/tour";
+
 // Content
 import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/australian-convict-sites";
 
 @NgModule({
   declarations: [
     MyApp,
+    TourPage,
     TabsPage,
     InfoPage,
     HelpPage,
@@ -34,6 +37,7 @@ import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/aust
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    TourPage,
     TabsPage,
     InfoPage,
     HelpPage,
