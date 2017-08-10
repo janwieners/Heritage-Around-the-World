@@ -10,11 +10,12 @@ import {OverviewPage} from '../pages/overview/overview';
 
 import {TabsPage} from '../pages/tabs/tabs';
 
-import {DetailJapanKinkakujiPage} from '../pages/detail-japan-kinkakuji/detail-japan-kinkakuji'
-
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {CodescannerPage} from "../pages/codescanner/codescanner";
+
+// Content
+import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/australian-convict-sites";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
     HelpPage,
     OverviewPage,
     CodescannerPage,
-    DetailJapanKinkakujiPage
+    AustralianConvictSitesPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,7 @@ import {CodescannerPage} from "../pages/codescanner/codescanner";
     HelpPage,
     OverviewPage,
     CodescannerPage,
-    DetailJapanKinkakujiPage
+    AustralianConvictSitesPage
   ],
   providers: [
     StatusBar,
