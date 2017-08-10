@@ -13,7 +13,7 @@
     Bitte scannen Sie einen QR-Code, um weiterführende Informationen zu Ihrem gewünschten Thema zu erhalten.
   </p>
   <p style="text-align: center;">
-    <button ion-button color="secondary" on-tap="startScanner()">QR-Code scannen</button>
+    <button ion-button color="secondary" (tap)="startScanner()">QR-Code scannen</button>
   </p>
   <p *ngIf="codeFormat && debug">
     Format des QR-/Barcodes: {{codeFormat}}
