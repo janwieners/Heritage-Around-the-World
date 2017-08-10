@@ -18,6 +18,8 @@ export class CodescannerPage {
   ionViewDidLoad() {
   }
 
+  private debug: boolean = true;
+
   private codeFormat: string = '';
   private codeContent: string = '';
 

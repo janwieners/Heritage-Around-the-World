@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Barcode-/QR-Code-Scanner</ion-title>
+    <ion-title>Projektscanner</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -11,13 +11,17 @@
 
   <p>
     Bitte scannen Sie einen QR-Code, um weiterführende Informationen zu Ihrem gewünschten Thema zu erhalten.
-    <br>
+  </p>
+  <p style="text-align: center;">
     <button ion-button color="secondary" on-tap="startScanner()">QR-Code scannen</button>
   </p>
-  <p *ngIf="codeFormat">
+  <p *ngIf="codeFormat && debug">
     Format des QR-/Barcodes: {{codeFormat}}
     <br>
     QR-/Barcode-Text: {{codeContent}}
+  </p>
+  <p>
+    <img src="assets/img/codescanner/qrcode.png" alt="QR-Code" style="opacity: 0.3;">
   </p>
 
 </ion-content>
