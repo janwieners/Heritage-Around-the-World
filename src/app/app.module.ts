@@ -19,6 +19,12 @@ import {TourPage} from "../pages/tour/tour";
 // Content
 import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/australian-convict-sites";
 
+// Tour Overview Pages
+import {TourNaturkulturPage} from "../pages/tour-naturkultur/tour-naturkultur";
+import {TourMenschenmonumentePage} from "../pages/tour-menschenmonumente/tour-menschenmonumente";
+import {TourImmaterielleskulturerbePage} from "../pages/tour-immaterielleskulturerbe/tour-immaterielleskulturerbe";
+import {TourStadtlandmenschPage} from "../pages/tour-stadtlandmensch/tour-stadtlandmensch";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,6 +34,10 @@ import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/aust
     HelpPage,
     OverviewPage,
     CodescannerPage,
+    TourNaturkulturPage,
+    TourMenschenmonumentePage,
+    TourImmaterielleskulturerbePage,
+    TourStadtlandmenschPage,
     AustralianConvictSitesPage
   ],
   imports: [
@@ -43,6 +53,10 @@ import {AustralianConvictSitesPage} from "../pages/australian-convict-sites/aust
     HelpPage,
     OverviewPage,
     CodescannerPage,
+    TourNaturkulturPage,
+    TourMenschenmonumentePage,
+    TourImmaterielleskulturerbePage,
+    TourStadtlandmenschPage,
     AustralianConvictSitesPage
   ],
   providers: [

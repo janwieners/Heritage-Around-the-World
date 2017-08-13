@@ -11,18 +11,18 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col (tap)="openOverviewPage(0)">
         <img src="assets/img/touren/natur-kultur.jpg">
       </ion-col>
-      <ion-col>
+      <ion-col (tap)="openOverviewPage(1)">
         <img src="assets/img/touren/menschen-monumente.jpg">
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
+      <ion-col (tap)="openOverviewPage(2)">
         <img src="assets/img/touren/immaterielles-kulturerbe.jpg">
       </ion-col>
-      <ion-col>
+      <ion-col (tap)="openOverviewPage(3)">
         <img src="assets/img/touren/stadt-land-mensch.jpg">
       </ion-col>
     </ion-row>
