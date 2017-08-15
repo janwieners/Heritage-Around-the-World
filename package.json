@@ -27,6 +27,7 @@
         "@ionic-native/status-bar": "3.12.1",
         "@ionic/storage": "2.0.1",
         "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
         "cordova-plugin-compat": "^1.1.0",
         "cordova-plugin-console": "1.0.7",
         "cordova-plugin-device": "1.1.6",
@@ -43,9 +44,8 @@
     },
     "devDependencies": {
         "@ionic/app-scripts": "^2.1.3",
-        "@ionic/cli-plugin-cordova": "1.6.2",
         "@ionic/cli-plugin-ionic-angular": "1.4.1",
-        "ionic": "3.7.0",
+        "ionic": "3.8.1",
         "typescript": "2.3.4"
     },
     "cordovaPlugins": [
@@ -66,7 +66,8 @@
     ],
     "cordova": {
         "platforms": [
-            "android"
+            "android",
+            "ios"
         ],
         "plugins": {
             "cordova-plugin-console": {},
