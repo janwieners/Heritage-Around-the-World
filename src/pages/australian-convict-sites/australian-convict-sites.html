@@ -1,32 +1,130 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>01_Australian Convict Sites</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
 
   <ion-card>
-    <ion-card-header>Kurzbeschreibung</ion-card-header>
+
+    <img src="assets/img/overview/1australien.jpg">
+
+    <ion-card-title padding>
+      01 Australian Convict Sites
+    </ion-card-title>
+    <p padding class="teaser">
+      Was bedeutet ‚Australian Heritage’ für Besucher*innen und Mit-arbeitende in der UNESCO nominierten
+      Weltkulturerbestätte Hyde Park Barracks in Sydney, Australien?
+    </p>
+
+    <ion-list>
+
+      <button ion-item (tap)="scrollTo('description')">
+        <ion-icon name='clipboard' item-start></ion-icon>
+        Projektbeschreibung
+      </button>
+
+      <button ion-item (tap)="scrollTo('materials')">
+        <ion-icon name='images' item-start></ion-icon>
+        Materialien
+      </button>
+
+      <button ion-item (tap)="scrollTo('person')">
+        <ion-icon name='contacts' item-start></ion-icon>
+        Informationen zur Person
+      </button>
+
+    </ion-list>
+
+  </ion-card>
+
+
+  <ion-card id="description">
     <ion-card-content>
-      Die Australian Convict Sites - ein seit 2010 von der UNESCO gelistetes Weltkulturerbe. Doch was sagt es über
-      australisches Erbe tatsächlich aus? Als bedeutender Teil des Australian Heritage deklariert, fragten wir uns, was
-      genau denn Australian Heritage bedeutet. Mit Fragebögen, Interviewfragen und kognitiven Methoden bewaffnet,
-      machten wir uns im Februar 2016 auf den Weg nach Tasmanien und Sydney.
+      <ion-card-title>Projektbeschreibung</ion-card-title>
+      <h3>Die Weltkulturerbestätte</h3>
+      <p>
+        Die Australian Convict Sites - ein seit 2010 von der UNESCO gelistetes Weltkulturerbe. Doch was sagt es über
+        australisches Erbe tatsächlich aus? Als bedeutender Teil des Australian Heritage deklariert, fragten wir uns,
+        was genau denn Australian Heritage bedeutet. Mit Fragebögen, Interviewfragen und kognitiven Methoden bewaffnet,
+        machten wir uns im Februar 2016 auf den Weg nach Tasmanien und Sydney.
+      </p>
+      <h3>Wo wir waren</h3>
+      <p>
+        Wir hatten die Möglichkeit vier der elf Sträflingsorte zu besuchen (Port Arthur, Female Factory, Cockatoo
+        Island, Hyde Park Barracks) und mit den dortigen Mitarbeitenden und Besucher*innen zu arbeiten. Den intensivsten
+        Austausch hatten wir in den Hyde Park Barracks, einem heutigem Museum, welches sich aus einer Sträflingsanstalt,
+        einem Asylort und daraufhin einer Kanzlei entstanden ist.
+      </p>
+      <h3>Erste Ergebnisse</h3>
+      <p>
+        Unsere teilnehmenden Beobachtungen offenbarten eine starke Unterrepräsentation bzw. eine beschönigte, sehr
+        positive Darstellung der indigenen Geschichte. Da auch die UNESCO World Heritage List keine Aborigine-Stätten in
+        Australien listet, wunderten wir uns, was dann von AustralierInnen als Heritage verstanden wird. Wir vermuteten
+        einen großen kolonialen Schwerpunkt, der sich bereits im Museum widergespiegelt hatte. In den Interviews wurde
+        diese These zunächst stark unterstützt. Viele Mitarbeitende sprachen von dem zweihundert Jahre altem
+        australischem Heritage, das sich also ausschließlich auf weiße Kolonialgüter beziehen kann. Warum diese
+        Sichtweise vorwiegend geschildert wurde ist unterschiedlich begründet worden. Auf der anderen Seite taten sich
+        alle Befragten schwer, eine kohärente Definition zu liefern und sprachen häufig von der Fluidität und Varianz
+        von Heritage.
+      </p>
+      <h3>Free-Listing und Pile-Sorting</h3>
+      <p>
+        Interessanterweise konnten wir einen distinkten Blickwinkel bei den BesucherInnen erkennen, als es nicht um eine
+        Definition, sondern um Beispiele für Australian Heritage ging. Beim Free Listing, einer spannenden Methode aus
+        der kognitiven Ethnologie, sollten die Teilnehmenden alle Beispiele aufschreiben, die ihnen zu Australian
+        Heritage einfielen. Genauer wurde nach kulturellen Praktiken, Stätten und Objekten gefragt, die als wichtig für
+        australisches Heritage antizipiert werden. Dabei wurden neben Naturobjekten und Landschaften vornehmlich
+        Kategorien wie ‚aboriginal arts‘ u.ä. genannt. Diese Diskrepanz zwischen Interviewaussagen und Besucherumfragen,
+        wollten wir durch ein an die Free-Listing-Ergebnisse anschließendes Pile Sorting verstehen. Hier wurden die zehn
+        häufigsten frei gelisteten Ergebnisse auf Karten ausgedruckt, die dann von einer neuen Personengruppe im Museum
+        nach Wichtigkeit geordnet werden mussten. Die Rohdaten werteten wir nach der Prioritätsverteilung und der
+        Absoluten Häufigkeit aus. Bei der absoluten Häufigkeit differenzierten wir dann zwischen nationalen und
+        internationalen BesucherInnen und erhielten so eine durchschnittliche Priorisierung der zehn Heritage-Nennungen.
+      </p>
+      <h3>Anweisung an den Besucher/die Besucherin</h3>
+      <p>
+        Versuchen Sie selbst einmal hier am Poster die Kärtchen nach Wichtigkeit zu sortieren und vergleichen im
+        Anschluss Ihre Version mit den Ergebnissen im Video.
+      </p>
+      <p>
+        In dem hier eingefügten Video findet sich der Großteil der gelegten Anordnungen. Im Hintergrund hören Sie
+        Audiodateien, die im Hyde Park Barracks Museum in Dauerschleife abgespielt wurden.
+      </p>
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>Materialien</ion-card-header>
-    <ion-card-content></ion-card-content>
+  <ion-card id="materials">
+    <ion-card-content>
+      <ion-card-title>Materialien</ion-card-title>
+      <p>
+        <iframe width="100%" height="315" [src]="videoUrl" frameborder="0" allowfullscreen></iframe>
+      </p>
+    </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>Informationen zur Person</ion-card-header>
-    <ion-card-content></ion-card-content>
+  <ion-card id="person">
+    <ion-card-content>
+      <ion-card-title>Informationen zur Person</ion-card-title>
+      <p>
+        <img src="assets/img/pages/australian-convict-sites/adolph.jpg">
+        Nele Adolph studiert Ethnologie und Erziehungswissenschaften auf Bachelor. Sie nutzte diese Gelegenheit, sich
+        als angehende Ethnologin auszuprobieren, um ein Thema für ihre Abschlussarbeit zu finden. Sie war vom 20.
+        Februar bis zum 19. März 2016 in Sydney und in Tasmanien.
+      </p>
+      <ion-card-title>Informationen zur Person</ion-card-title>
+      <p>
+        <img src="assets/img/pages/australian-convict-sites/borygina.jpg">
+        Natalia Borygina studierte Interkulturelle Kommunikation und Bildung auf Master und Lehramt für
+        Sonderpädagogische Förderung auf Bachelor. Inzwischen hat sie ihren Master im Fach IKB geschafft. Sie war vom 9.
+        März bis zum 8. April 2016 "im Feld".
+      </p>
+    </ion-card-content>
   </ion-card>
 
   <ion-card>

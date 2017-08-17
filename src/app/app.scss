@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/v2/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -47,4 +46,13 @@ ion-slides {
     color: #fff;
   }
 
+}
+
+ion-card-content h3 {
+  font-size: 1.3em !important;
+}
+
+.teaser {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
