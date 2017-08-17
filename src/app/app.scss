@@ -56,3 +56,21 @@ ion-card-content h3 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+#person p {
+  overflow-wrap: break-word !important;
+}
+
+.authorbox {
+  display: inline-block;
+  margin-bottom: 15px;
+  hyphens: auto;
+}
+
+.authorphoto {
+  max-width: 150px !important;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  float: left !important;
+  margin-right: 15px !important;
+}

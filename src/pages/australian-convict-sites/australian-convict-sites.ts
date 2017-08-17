@@ -14,7 +14,7 @@ export class AustralianConvictSitesPage {
 
   scrollTo(element:string) {
     let yOffset = document.getElementById(element).offsetTop;
-    this.content.scrollTo(0, yOffset, 3000)
+    this.content.scrollTo(0, yOffset, 1500)
   }
 
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
