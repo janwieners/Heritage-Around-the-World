@@ -1,18 +1,80 @@
-<!--
-  Generated template for the PalmyraPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>palmyra</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<ion-content>
 
-<ion-content padding>
+  <ion-card>
+
+    <img src="assets/img/overview/.jpg">
+
+    <ion-card-title padding>
+
+    </ion-card-title>
+    <p padding class="teaser">
+
+    </p>
+
+    <ion-list>
+
+      <button ion-item (tap)="scrollTo('description')">
+        <ion-icon name='clipboard' item-start></ion-icon>
+        Projektbeschreibung
+      </button>
+
+      <button ion-item (tap)="scrollTo('materials')">
+        <ion-icon name='images' item-start></ion-icon>
+        Materialien
+      </button>
+
+      <button ion-item (tap)="scrollTo('person')">
+        <ion-icon name='contacts' item-start></ion-icon>
+        Informationen zur Person
+      </button>
+
+    </ion-list>
+
+  </ion-card>
+
+  <ion-card id="description">
+    <ion-card-content>
+      <ion-card-title>Projektbeschreibung</ion-card-title>
+      <h3>
+
+      </h3>
+      <p>
+
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="materials">
+    <ion-card-content>
+      <ion-card-title>Materialien</ion-card-title>
+      <p>
+        <iframe width="100%" height="315" [src]="videoUrl" frameborder="0" allowfullscreen></iframe>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="person">
+    <ion-card-content>
+      <ion-card-title>Informationen zur Person</ion-card-title>
+
+      <div class="authorbox">
+        <img src="assets/img/pages/" class="authorphoto">
+
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/qrcodes/.png" style="opacity: 0.2;">
+  </ion-card>
 
 </ion-content>

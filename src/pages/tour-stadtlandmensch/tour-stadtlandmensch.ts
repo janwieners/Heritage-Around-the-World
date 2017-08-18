@@ -63,6 +63,10 @@ export class TourStadtlandmenschPage {
     LaAmistadNationalparkPage,
     LosVoladoresPage];
 
+  openPage(pagenumber:number) {
+    this.navCtrl.push(this.pages[pagenumber]);
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 }

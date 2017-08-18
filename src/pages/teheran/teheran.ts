@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the TeheranPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Content } from 'ionic-angular';
+import {SafeResourceUrl, DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   selector: 'page-teheran',
@@ -14,11 +8,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TeheranPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Content) content: Content;
+
+  private videoUrl: SafeResourceUrl;
+
+  scrollTo(element:string) {
+    let yOffset = document.getElementById(element).offsetTop;
+    this.content.scrollTo(0, yOffset, 1500)
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TeheranPage');
+  constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
+    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ilw45DNuRWI')
   }
 
 }
