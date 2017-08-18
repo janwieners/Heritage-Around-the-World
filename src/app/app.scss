@@ -54,7 +54,7 @@ ion-card-content h3 {
 
 .teaser {
   padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 15px !important;
 }
 
 #person p {
@@ -68,9 +68,9 @@ ion-card-content h3 {
 }
 
 .authorphoto {
-  max-width: 150px !important;
+  max-width: 125px !important;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
   float: left !important;
-  margin-right: 15px !important;
 }
