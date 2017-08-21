@@ -51,7 +51,7 @@ export class CodescannerPage {
     '5hashima': HashimaTakashimaPage,
     '6nagasaki': NagasakiPage,
     '7bali': BaliPage,
-    '8melakka': MalakkaPage,
+    '8malakka': MalakkaPage,
     '9vietnam': HoiAnPage,
     '10kathmandu': KathmanduPage,
     '11hampielefant': HampiElefantPage,
