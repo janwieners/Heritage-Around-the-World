@@ -83,3 +83,22 @@ ion-slide img {
 h3 {
   margin-top: 15px !important;
 }
+
+ion-slide h3 {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  top: 15px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: rgb(255, 255, 255);
+}
