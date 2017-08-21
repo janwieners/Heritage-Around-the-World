@@ -10,15 +10,12 @@ export class MalakkaPage {
 
   @ViewChild(Content) content: Content;
 
-  private videoUrl: SafeResourceUrl;
-
   scrollTo(element:string) {
     let yOffset = document.getElementById(element).offsetTop;
     this.content.scrollTo(0, yOffset, 1500)
   }
 
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
-    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ilw45DNuRWI')
   }
 
 }
