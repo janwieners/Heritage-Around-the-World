@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.janwieners.heritagearoundtheworld" version="0.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="de.janwieners.heritagearoundtheworld" version="0.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Heritage Around the World</name>
     <description>Ausstellungsbegleitende App der Forschungsklasse Welterbe, Universität zu Köln</description>
     <author email="jan@jan-wieners.de" href="http://www.jan-wieners.de">Jan G. Wieners</author>
