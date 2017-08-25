@@ -10,7 +10,8 @@ export class RobbenIslandPage {
 
   @ViewChild(Content) content: Content;
 
-  private videoUrl: SafeResourceUrl;
+  private firstVideoUrl: SafeResourceUrl;
+  private secondVideoUrl: SafeResourceUrl;
 
   scrollTo(element:string) {
     let yOffset = document.getElementById(element).offsetTop;
@@ -18,7 +19,8 @@ export class RobbenIslandPage {
   }
 
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
-    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ilw45DNuRWI')
+    this.firstVideoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/SzuTGZHj8CA')
+    this.secondVideoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/_GCmNc-bSNQ')
   }
 
 }
