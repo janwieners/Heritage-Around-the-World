@@ -18,7 +18,7 @@ export class LaAmistadNationalparkPage {
   }
 
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
-    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ilw45DNuRWI')
+    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/7uzO6VBfM-k')
   }
 
 }
