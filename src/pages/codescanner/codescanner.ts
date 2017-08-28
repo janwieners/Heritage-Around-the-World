@@ -73,7 +73,7 @@ export class CodescannerPage {
     '27mexiko': LosVoladoresPage
   };
 
-  private debug: boolean = true;
+  private debug: boolean = false;
 
   private codeFormat: string = '';
   private codeContent: string = '';
