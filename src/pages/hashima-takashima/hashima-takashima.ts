@@ -18,7 +18,7 @@ export class HashimaTakashimaPage {
   }
 
   constructor(private domSanitizer: DomSanitizer, public navCtrl: NavController, public navParams: NavParams) {
-    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/syYb08W9ApI')
+    this.videoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/gTWtPcjrwX0');
   }
 
 }
